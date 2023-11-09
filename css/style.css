@@ -118,6 +118,7 @@ body {
   height: 100vh;
   background-color: #b5caee;
   background-image: url(../images/hero-bg.jpg);
+  background-position: center center;
   background-size: cover;
 }
 
