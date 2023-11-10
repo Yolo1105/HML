@@ -240,7 +240,7 @@ section {
 .services .service-item:hover h4,
 .services .service-item:hover p {
     color: #fff;
-    transform: scale(1.2) translateY(-70px);
+    transform: scale(1.2) translateY(-60px);
 }
 
 .services .service-item h4 {
