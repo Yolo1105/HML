@@ -162,17 +162,19 @@ section {
 }
 
 .services .col-md-4 {
-	padding-left: 2px;
-	padding-right: 2px;
-    padding-top:2px;
+	padding-left: 0px;
+	padding-right: 0px;
+    padding-top:0px;
 }
 
 .services .service-item {
-	margin-bottom: 3px;
+	margin-bottom: 0px;
 	background-color: #eaebef;
 	padding: 50px;
 	text-align: center;
-	transition: all 0.5s;
+	transition: all .5s;
+    border: 1px solid black;
+    z-index: 1;
 }
 
 .services .service-item .icon {
@@ -183,6 +185,7 @@ section {
 	background-size: cover;
 	background-repeat: no-repeat;
 	transition: all 0.5s;
+    
 }
 
 .services .first-item .icon {
@@ -190,6 +193,7 @@ section {
 }
 .services .first-item:hover .icon {
 	background-image: url(../images/icon_hover_01.png);
+    /* transform: scale(1.2); */
 }
 
 .services .second-item .icon {
@@ -228,11 +232,15 @@ section {
 }
 
 .services .service-item:hover {
-	background-color: #fec016; 
+	position:relative;
+    background-color: #fec016; 
+    transform: scale(1.2);
+    z-index: 1000;
 }
 .services .service-item:hover h4,
 .services .service-item:hover p {
-	color: #fff;
+    color: #fff;
+    transform: scale(1.2) translateY(-70px);
 }
 
 .services .service-item h4 {
@@ -243,6 +251,42 @@ col-md-4
 .services .service-item  p {
 	margin-bottom: 0px;
 	transition: all 0.5s;
+    
+}
+.services .service-item .submit-info{
+    text-align: center;
+    opacity: 0;
+
+}
+.submit-info input {
+    display: block;
+    margin-bottom: 10px; /* Adds space between the elements */
+    width: 100%; /* Optional: makes the input take the full width */
+}
+
+.services .service-item .submit-info .textenter {
+    display: block;
+    margin: 0 auto; /* Centers the element horizontally */
+    margin-bottom: 10px; /* Adds space between the elements */
+    width: 80%; /* Optional: makes the input take the full width */
+    text-align: center; /* Centers the placeholder */
+    border-radius: 15px; /* Adds beveled edges */
+}
+.services .service-item .submit-info .submitenter {
+    display: block;
+    margin: 0 auto; /* Centers the element horizontally */
+    margin-bottom: 10px;
+    width: 80px;
+    text-align: center; /* Centers the text inside the element */
+    border-radius: 15px; /* Adds beveled edges */
+    border: 1px solid black; /* Changes the border thickness */
+    background: #fff; /* Old browsers */
+}
+
+.services .service-item:hover .submit-info{
+    transition: all .5s;
+    opacity: 1;
+    transform: translateY(-40px);
 }
 
 /* Top Image */
